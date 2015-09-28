@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{780006DF-4805-4BF8-8CCE-56417168C670}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BOI_Allocate_Cost.My.MyApplication</StartupObject>
+    <RootNamespace>BOI_Allocate_Cost</RootNamespace>
+    <AssemblyName>BOI_Allocate_Cost</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>0AB48E7C10FCAACB9372637033F027DADE4DA8C6</ManifestCertificateThumbprint>
+    <ManifestKeyFile>BOI_Allocate_Cost_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/BOI/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://172.31.195.13/01BOI/</InstallUrl>
+    <UpdateUrl>http://172.31.195.13/01BOI/</UpdateUrl>
+    <ProductName>BOI</ProductName>
+    <PublisherName>NawaPlastic</PublisherName>
+    <MinimumRequiredVersion>1.1.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>BOI.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>25</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BOI_Allocate_Cost.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BOI_Allocate_Cost.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="VS2005Extender, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\VS2005Extender.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\NPIButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\NPIConnect.vb" />
+    <Compile Include="Class\NPIData.vb" />
+    <Compile Include="Class\NPIHeaderColumn.vb" />
+    <Compile Include="Class\NPILabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\NPIString.vb" />
+    <Compile Include="Class\NPIText.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\Frm004Costcenter.Designer.vb">
+      <DependentUpon>Frm004Costcenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm004Costcenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm111DivideIntoBOI.Designer.vb">
+      <DependentUpon>Frm111DivideIntoBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm111DivideIntoBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm212Allocate58x.Designer.vb">
+      <DependentUpon>Frm212Allocate58x.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm212Allocate58x.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm213Allocate6x.Designer.vb">
+      <DependentUpon>Frm213Allocate6x.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm213Allocate6x.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm215AllocateDPServiceNull.Designer.vb">
+      <DependentUpon>Frm215AllocateDPServiceNull.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm215AllocateDPServiceNull.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm214AllocateDPServiceBOI.Designer.vb">
+      <DependentUpon>Frm214AllocateDPServiceBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm214AllocateDPServiceBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm213AllocateDPDirectNull.Designer.vb">
+      <DependentUpon>Frm213AllocateDPDirectNull.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm213AllocateDPDirectNull.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm212AllocateDPDirectBOI.Designer.vb">
+      <DependentUpon>Frm212AllocateDPDirectBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm212AllocateDPDirectBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm211AllocateDPIndiretNull.Designer.vb">
+      <DependentUpon>Frm211AllocateDPIndiretNull.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm211AllocateDPIndiretNull.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm210AllocateDPIndiretBOI.Designer.vb">
+      <DependentUpon>Frm210AllocateDPIndiretBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm210AllocateDPIndiretBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm209DetailsDepre.Designer.vb">
+      <DependentUpon>Frm209DetailsDepre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm209DetailsDepre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm102AdjFromExcel.Designer.vb">
+      <DependentUpon>Frm102AdjFromExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm102AdjFromExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm101AdjustRecipeint.Designer.vb">
+      <DependentUpon>Frm101AdjustRecipeint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm101AdjustRecipeint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm201AllocateFOH.Designer.vb">
+      <DependentUpon>Frm201AllocateFOH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm201AllocateFOH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm202DetailsFOH.Designer.vb">
+      <DependentUpon>Frm202DetailsFOH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm202DetailsFOH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm203AllocateFOHIndirect.Designer.vb">
+      <DependentUpon>Frm203AllocateFOHIndirect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm203AllocateFOHIndirect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm204AllocateFOHDirectBOI.Designer.vb">
+      <DependentUpon>Frm204AllocateFOHDirectBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm204AllocateFOHDirectBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm205AllocateFOHDirectNull.Designer.vb">
+      <DependentUpon>Frm205AllocateFOHDirectNull.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm205AllocateFOHDirectNull.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm206AllocateFOHServiceBOI.Designer.vb">
+      <DependentUpon>Frm206AllocateFOHServiceBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm206AllocateFOHServiceBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm207AllocateFOHServiceNull.Designer.vb">
+      <DependentUpon>Frm207AllocateFOHServiceNull.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm207AllocateFOHServiceNull.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm208TotalAllocateFOH.Designer.vb">
+      <DependentUpon>Frm208TotalAllocateFOH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm208TotalAllocateFOH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm230Production.Designer.vb">
+      <DependentUpon>Frm230Production.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm230Production.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm301StockBalanceEnding.Designer.vb">
+      <DependentUpon>Frm301StockBalanceEnding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm301StockBalanceEnding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm401NetSales.Designer.vb">
+      <DependentUpon>Frm401NetSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm401NetSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm002Machine.Designer.vb">
+      <DependentUpon>Frm002Machine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm002Machine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm001Product.Designer.vb">
+      <DependentUpon>Frm001Product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm001Product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm802ReportAdjust.Designer.vb">
+      <DependentUpon>Frm802ReportAdjust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm802ReportAdjust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm801ReportData.Designer.vb">
+      <DependentUpon>Frm801ReportData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm801ReportData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Frm901ReportProg.Designer.vb">
+      <DependentUpon>Frm901ReportProg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Frm901ReportProg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Frm004Costcenter.resx">
+      <DependentUpon>Frm004Costcenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm111DivideIntoBOI.resx">
+      <DependentUpon>Frm111DivideIntoBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm212Allocate58x.resx">
+      <DependentUpon>Frm212Allocate58x.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm213Allocate6x.resx">
+      <DependentUpon>Frm213Allocate6x.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm215AllocateDPServiceNull.resx">
+      <DependentUpon>Frm215AllocateDPServiceNull.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm214AllocateDPServiceBOI.resx">
+      <DependentUpon>Frm214AllocateDPServiceBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm213AllocateDPDirectNull.resx">
+      <DependentUpon>Frm213AllocateDPDirectNull.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm212AllocateDPDirectBOI.resx">
+      <DependentUpon>Frm212AllocateDPDirectBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm211AllocateDPIndiretNull.resx">
+      <DependentUpon>Frm211AllocateDPIndiretNull.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm210AllocateDPIndiretBOI.resx">
+      <DependentUpon>Frm210AllocateDPIndiretBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm209DetailsDepre.resx">
+      <DependentUpon>Frm209DetailsDepre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm102AdjFromExcel.resx">
+      <DependentUpon>Frm102AdjFromExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm101AdjustRecipeint.resx">
+      <DependentUpon>Frm101AdjustRecipeint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm201AllocateFOH.resx">
+      <DependentUpon>Frm201AllocateFOH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm202DetailsFOH.resx">
+      <DependentUpon>Frm202DetailsFOH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm203AllocateFOHIndirect.resx">
+      <DependentUpon>Frm203AllocateFOHIndirect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm204AllocateFOHDirectBOI.resx">
+      <DependentUpon>Frm204AllocateFOHDirectBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm205AllocateFOHDirectNull.resx">
+      <DependentUpon>Frm205AllocateFOHDirectNull.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm206AllocateFOHServiceBOI.resx">
+      <DependentUpon>Frm206AllocateFOHServiceBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm207AllocateFOHServiceNull.resx">
+      <DependentUpon>Frm207AllocateFOHServiceNull.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm208TotalAllocateFOH.resx">
+      <DependentUpon>Frm208TotalAllocateFOH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm230Production.resx">
+      <DependentUpon>Frm230Production.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm301StockBalanceEnding.resx">
+      <DependentUpon>Frm301StockBalanceEnding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm401NetSales.resx">
+      <DependentUpon>Frm401NetSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm002Machine.resx">
+      <DependentUpon>Frm002Machine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm001Product.resx">
+      <DependentUpon>Frm001Product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm802ReportAdjust.resx">
+      <DependentUpon>Frm802ReportAdjust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm801ReportData.resx">
+      <DependentUpon>Frm801ReportData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Frm901ReportProg.resx">
+      <DependentUpon>Frm901ReportProg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BOI_Allocate_Cost_TemporaryKey.pfx" />
+    <None Include="Resources\OK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="toIcon2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
